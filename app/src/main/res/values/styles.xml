@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Estilo que quita la barra de acciones-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Estilo que muestra una pantalla FullScreen-->
+    <style name="ThemeFullScreen" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ViewsTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ThemeLogin" parent="ViewsTheme">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/dialog_body</item>
+        <item name="android:paddingEnd">@dimen/dialog_body</item>
+        <item name="android:paddingStart">@dimen/dialog_body</item>
+    </style>
+
+    <!--Estilos para los botones-->
+    <style name="ThemeButton" parent="ViewsTheme">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingBottom">@dimen/button_padding</item>
+        <item name="android:paddingTop">@dimen/button_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="ThemeButton_Normal" parent="ThemeButton">
+        <item name="android:textColor">@color/colorBlanco</item>
+        <item name="android:background">@drawable/bk_boton_selector</item>
+    </style>
+
+    <style name="ThemeButton_Margen" parent="ThemeButton">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/bk_boton_margen_selector</item>
+    </style>
+
+    <!-- Estilo para los TextInputLayouts-->
+    <style name="ThemeTextInputLayouts" parent="ViewsTheme"></style>
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/colorError</item>
+    </style>
+
+    <!--Estilos para los AppCompatEditText-->
+    <style name="ThemeTilEditText" parent="ViewsTheme">
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/colorSecondaryText</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <style name="ThemePassword" parent="ThemeTilEditText">
+        <item name="android:drawableStart">@drawable/ic_login_password</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="ThemeEtPass" parent="ThemePassword">
+        <item name="android:hint">@string/hint_login_password</item>
+    </style>
+
+    <style name="ThemeEtConfirmarPass" parent="ThemePassword">
+        <item name="android:hint">@string/hint_registro_confirmar_password</item>
+    </style>
+
+
+</resources>

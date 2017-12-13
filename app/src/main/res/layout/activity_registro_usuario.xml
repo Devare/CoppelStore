@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlanco"
+    android:layout_width="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_registrar_usuario"
+        android:layout_alignParentStart="true"
+        tools:context=".views.registro_usuario.RegistroUsuarioActivity">
+
+        <include layout="@layout/content_registro_usuario" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_registrar_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bk_boton_selector"
+            android:paddingBottom="@dimen/button_padding"
+            android:paddingTop="@dimen/button_padding"
+            android:text="@string/label_btn_registro__registrar"
+            android:textColor="@color/colorBlanco" />
+
+</RelativeLayout>

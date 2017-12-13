@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--activity_login.xml-->
+    <dimen name="dialog_body">24dp</dimen>
+    <dimen name="padding_between">15dp</dimen>
+    <dimen name="button_padding">15dp</dimen>
+
+    <dimen name="app_bar_height">200dp</dimen>
+</resources>

@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:paddingBottom="48dp"
+    android:paddingTop="48dp"
+    android:paddingStart="@dimen/dialog_body"
+    android:paddingEnd="@dimen/dialog_body">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_registro_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusForward="@id/til_confirmar_password"
+        app:errorTextAppearance="@style/ErrorText">
+
+        <mx.com.solutions.devare.coppelstore.custom_views.CustomEdiText
+            android:id="@+id/et_registro_correo"
+            style="@style/ThemeTilEditText"
+            android:hint="@string/hint_registro_correo_electronico"
+            android:inputType="textEmailAddress"
+            android:textSize="12sp"
+            app:drawableStart="@drawable/ic_registro_email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_registro_password"
+            style="@style/ThemeTextInputLayouts"
+            android:layout_weight="1"
+            app:errorTextAppearance="@style/ErrorText"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_registro_password"
+                style="@style/ThemeEtPass"
+                android:imeOptions="actionNext"
+                android:textSize="12sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_confirmar_password"
+            style="@style/ThemeTextInputLayouts"
+            android:layout_weight="1"
+            app:errorTextAppearance="@style/ErrorText"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_confirmar_password"
+                style="@style/ThemeEtConfirmarPass"
+                android:imeOptions="actionNext"
+                android:textSize="12sp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_registro_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorTextAppearance="@style/ErrorText">
+
+        <mx.com.solutions.devare.coppelstore.custom_views.CustomAutoCompleteTextView
+            android:id="@+id/autocomplete_registro_nombre"
+            style="@style/ThemeTilEditText"
+            android:hint="@string/hint_registro_nombres"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:textSize="12sp"
+            app:drawableStart="@drawable/ic_registro_edit" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_registro_ap_paterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:errorTextAppearance="@style/ErrorText">
+
+            <mx.com.solutions.devare.coppelstore.custom_views.CustomAutoCompleteTextView
+                android:id="@+id/autocomplete_registro_ap_paterno"
+                style="@style/ThemeTilEditText"
+                android:hint="@string/hint_registro_apellido_paterno"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                android:textSize="12sp"
+                app:drawableStart="@drawable/ic_registro_edit" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_registro_ap_materno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:errorTextAppearance="@style/ErrorText">
+
+            <mx.com.solutions.devare.coppelstore.custom_views.CustomAutoCompleteTextView
+                android:id="@+id/autocomplete_registro_ap_materno"
+                style="@style/ThemeTilEditText"
+                android:hint="@string/hint_registro_ap_materno"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                android:imeOptions="actionDone"
+                android:nextFocusForward="@id/btn_agregar_fecha"
+                app:drawableStart="@drawable/ic_registro_edit" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_fecha_nacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_fecha_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:errorTextAppearance="@style/ErrorText">
+
+            <mx.com.solutions.devare.coppelstore.custom_views.CustomEdiText
+                android:id="@+id/et_fecha_nacimiento"
+                style="@style/ThemeTilEditText"
+                android:enabled="false"
+                android:inputType="text"
+                android:labelFor="@+id/et_fecha_nacimiento"
+                android:text="@string/hint_registro_fecha_de_nacimiento"
+                android:textSize="12sp"
+                app:drawableStart="@drawable/ic_registro_fecha" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_agregar_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bk_boton_selector"
+            android:text="@string/label_btn_registro_agregar_fecha"
+            android:textColor="@color/colorBlanco"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_registro_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:errorTextAppearance="@style/ErrorText">
+
+        <mx.com.solutions.devare.coppelstore.custom_views.CustomEdiText
+            android:id="@+id/et_registro_telefono"
+            style="@style/ThemeTilEditText"
+            android:digits="0123456789"
+            android:hint="@string/hint_registro_numero_telefonico"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textSize="12sp"
+            android:imeOptions="actionDone"
+            app:drawableStart="@drawable/ic_registro_telefono" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_resgistro_sexo"
+        android:textColor="@color/colorPrimary" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_hombre"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/radio_selector_hombre"
+            android:button="@android:color/transparent" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_mujer"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/radio_selector_mujer"
+            android:button="@android:color/transparent" />
+
+    </RadioGroup>
+
+</LinearLayout>

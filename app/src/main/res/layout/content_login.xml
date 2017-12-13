@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fb="http://schemas.android.com/tools"
+    android:id="@+id/ll_login"
+    style="@style/ThemeLogin">
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/button_padding"
+        android:contentDescription="@string/info_iv_descripcion"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <Button
+        android:id="@+id/btn_login_ingresar_facebook"
+        style="@style/ThemeButton_Normal"
+        android:drawableStart="@drawable/ic_login_facebook_white"
+        android:paddingEnd="25dp"
+        android:paddingStart="25dp"
+        android:text="@string/label_btn_login_facebook" />
+
+    <TextView
+        android:id="@+id/tv_info_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_between"
+        android:layout_marginTop="@dimen/padding_between"
+        android:gravity="center"
+        android:text="@string/label_tv_login_ingreso_correo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_login_usuario"
+        style="@style/ThemeTextInputLayouts"
+        app:errorTextAppearance="@style/ErrorText">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_login_usuario"
+            style="@style/ThemeTilEditText"
+            android:drawableStart="@drawable/ic_login_usuario"
+            android:hint="@string/hint_login_usuario"
+            android:textSize="14sp"
+            android:imeActionLabel="@string/ime_action_label_siguiente"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_login_password"
+        style="@style/ThemeTextInputLayouts"
+        app:errorTextAppearance="@style/ErrorText"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorPrimary">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_login_password"
+            android:textSize="14sp"
+            android:imeOptions="actionGo"
+            style="@style/ThemeEtPass" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_msj_error_servidor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorError"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:text="Mensaje de error del servidor"/>
+
+    <Button
+        android:id="@+id/btn_login_ingresar_coppel"
+        style="@style/ThemeButton_Normal"
+        android:text="@string/label_btn_login_ingresar" />
+
+    <Button
+        android:id="@+id/btn_login_registrate"
+        style="@style/ThemeButton_Margen"
+        android:text="@string/label_btn_login_registrate" />
+
+    <TextView
+        android:id="@+id/btn_login_olvido_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/button_padding"
+        android:text="@string/label_tv_login_olvido_password"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

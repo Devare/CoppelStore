@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="drawableStartCompat" format="reference"/>
+        <attr name="drawableEndCompat" format="reference"/>
+        <attr name="drawableTopCompat" format="reference"/>
+        <attr name="drawableBottomCompat" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomEdiText">
+        <attr name="drawableStart" format="reference"/>
+        <attr name="drawableEnd" format="reference"/>
+        <attr name="drawableTop" format="reference"/>
+        <attr name="drawableBottom" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="selectedDrawable" format="reference"/>
+        <attr name="unselectedDrawable" format="reference"/>
+        <attr name="normalDrawable" format="reference"/>
+        <attr name="animationDrawable" format="integer"/>
+    </declare-styleable>
+
+</resources>

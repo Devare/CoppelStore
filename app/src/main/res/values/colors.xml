@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0A6CB7</color>
+    <color name="colorPrimaryDark">#1c313F</color>
+    <color name="colorAccent">#FDDC2F</color>
+    <color name="colorPrimaryLight">#83c8bc</color>
+
+    <!--Colores de los textos de la Aplicación-->
+    <color name="colorSecondaryText">#CCCCCC</color>
+    <color name="colorTextDark">#424242</color>
+    <color name="secondary_text">#757575</color>
+    <color name="primary_text">#212121</color>
+
+    <!--Colores TextInputLayouts-->
+    <color name="colorError">#f44336</color>
+
+    <!--Diccionario de otros colores-->
+    <color name="colorBlanco">#FFFFFF</color>
+    <color name="colorNegro">@color/primary_text</color>
+
+    <!--Colores transparentes -->
+    <color name="blancotransparente">#b4dedcdc</color>
+    <color name="negroTransparente">#b4212121</color>
+    <color name="primaryTransparente">#b40a6cb7</color>
+    <color name="accentTransparente">#e2fddc2f</color>
+
+    <!--Colores Botón normal-->
+    <color name="colorFondoNormal">@color/colorPrimary</color>
+
+    <!--colores Botón precionado-->
+    <color name="colorFondoPrecionado">@color/colorAccent</color>
+
+    <!--Colores Botón normal con Margen-->
+    <color name="colorFondoMargenNormal">@color/colorBlanco</color>
+    <color name="colorMargenNormal">@color/colorPrimary</color>
+
+    <!--colores Botón precionado con Margen-->
+    <color name="colorFondoMargenPrecionado">@color/primaryTransparente</color>
+    <color name="colorMargenPrecionado">@color/colorPrimaryDark</color>
+
+    <!--Color para la imagenes de los vectores-->
+    <color name="colorDrawables">@color/colorPrimary</color>
+</resources>

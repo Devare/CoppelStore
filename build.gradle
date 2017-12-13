@@ -1,0 +1,53 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "io.realm:realm-gradle-plugin:4.2.0"
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//Se definen las versiones de las dependencias y la configuración de la app
+ext{
+    //SDK Tools defaultConfig
+    compileSdkVersion = 27
+    minSdkVersion = 17
+    targetSdkVersion = 27
+    versionCode = 1
+
+    //Dependencias
+    supportLibraryVersion = '27.0.1'
+    constraintlayout = '1.0.2'
+    dagger2Version = '2.8'
+    javaxAnnotation = '1.0'
+    javaxInject = '1'
+    okhttp3Version = '3.8.1'
+    butterknife = '8.8.1'
+    rxandroid = '2.0.1'
+    rxjava = '2.1.5'
+    rxbinding = '2.0.0'
+    retrofit = '2.3.0'
+    gson = '2.8.0'
+    glide = '4.0.0-RC1'
+    facebook = '4.28.0'
+}

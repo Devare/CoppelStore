@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_terminos_ycondiciones"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".views.terminos_condiciones.TerminosCondicionesActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight=".9">
+
+        <include layout="@layout/conten_terminos_condiciones" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_tyc_botones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_terminos_rechazar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:text="@string/label_btn_rechazar"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_terminos_aceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bk_boton_selector"
+            android:text="@string/label_btn_aceptar"
+            android:textColor="@color/colorBlanco"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>

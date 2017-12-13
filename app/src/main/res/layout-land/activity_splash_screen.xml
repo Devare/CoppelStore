@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_landscape"
+    android:orientation="vertical"
+    tools:context=".views.splash.SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient_splash"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nombre_splash_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/walkway_black"
+                android:text="@string/label_tv_nombre"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="65sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_slogan_splash_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="@font/opificio_neue_regular"
+                android:text="@string/label_tv_slogan"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:textSize="29sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_splash_screen"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/info_iv_descripcion"
+            android:src="@drawable/ic_logo" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

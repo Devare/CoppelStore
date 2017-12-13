@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.solutions.devare.coppelstore">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".views.application.CoppelApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Actividad Splash Screen -->
+        <activity
+            android:name=".views.splash.SplashScreen"
+            android:theme="@style/ThemeFullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Actividad Términos y Condiciones -->
+        <activity
+            android:name=".views.terminos_condiciones.TerminosCondicionesActivity"
+            android:theme="@style/ThemeFullScreen"></activity>
+        <!-- Actividad Login -->
+        <activity
+            android:name=".views.login.LoginActivity"
+            android:theme="@style/ThemeFullScreen" />
+        <!-- Actividad Principal -->
+        <activity
+            android:name=".views.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--Actividad Registro de Usuario-->
+        <activity
+            android:name=".views.registro_usuario.RegistroUsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
